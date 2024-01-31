@@ -3,9 +3,10 @@
 
 name: Python application
 
+# Run once a day at 03:00h
 on:
-  push:
-    branches: [ "main" ]
+  schedule:
+    - cron: "0 3 * * *"
 
 permissions:
   contents: read
