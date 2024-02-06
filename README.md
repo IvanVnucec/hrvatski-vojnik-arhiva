@@ -5,6 +5,7 @@ Preuzete časopise možete pronaći u direktoriju `arhiva` u PDF formatu.
 Časopisi se automatski preuzimaju pomoću skripti koje se također nalaze u repozitoriju. Preuzimanje časopisa odvija se jednom dnevno u 03:00h pomoću _GitHub Actions_-a.
 
 ## Korištenje
+
 ```bash
 # Aktivirajte virtualno okruženje
 virtualenv .venv
@@ -14,5 +15,5 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # Pokrenite preuzimanje časopisa
-cd scraper && scrapy crawl magazines
+python3 main.py
 ```
