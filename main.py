@@ -1,6 +1,5 @@
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
-from os import system
 
 
 # run the scraper
@@ -9,9 +8,14 @@ process.crawl("hrvatski_vojnik")
 process.start()
 process.join()
 
+def exec(cmd):
+    from os import system
+    print(cmd)
+    system(cmd)
+
 # commit the scraped files
-system('git config --global user.email "you@example.com"')
-system('git config --global user.name "GitHub Actions"')
-system("git add arhiva")
-system("git commit -m 'Dodaj novi broj Hrvatskog vojnika'")
-system("git push")
+exec('git config --global user.email "you@example.com"')
+exec('git config --global user.name "GitHub Actions"')
+exec("git add arhiva")
+exec("git commit -m 'Dodaj novi broj Hrvatskog vojnika'")
+exec("git push")
