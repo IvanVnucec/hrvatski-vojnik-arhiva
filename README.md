@@ -2,7 +2,7 @@
 
 Repozitorij sadrži arhivu časopisa "Hrvatski vojnik" preuzetih sa službene stranice [hrvatski-vojnik.hr](https://hrvatski-vojnik.hr/).
 Preuzete časopise možete pronaći u direktoriju `arhiva` u PDF formatu.
-Časopisi se automatski preuzimaju pomoću skripti koje se također nalaze u repozitoriju. Preuzimanje časopisa odvija se jednom dnevno u 03:00h pomoću _GitHub Actions_-a.
+Časopisi se automatski preuzimaju pomoću skripti koje se također nalaze u repozitoriju. Preuzimanje časopisa odvija se jednom dnevno u 03:00h pomoću [GitHub Actions-a](https://github.com/IvanVnucec/hrvatski-vojnik-arhiva/blob/main/.github/workflows/scrape.yml).
 
 ## Korištenje
 
